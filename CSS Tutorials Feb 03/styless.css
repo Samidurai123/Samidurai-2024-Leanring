@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: darkgreen;
+}
+
+.tt{
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.cont div{
+    width: 200px;
+
+    margin: 10px;
+    flex-basis: 30%;
+    flex-grow: 1;
+
+}
+
+.cont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

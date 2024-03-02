@@ -1,0 +1,34 @@
+<h1>Enter the number</h1>
+<input id=num>
+<button onclick="checks()">Check</button>
+<p id="res">The answer is Right/Wrong</p>
+<p id="score">Your score </p>
+
+//first declare the elements of the web page
+<script>
+    // then in the script call those variables using their ids, class names
+    var snum = document.getElementById("num")
+    var sp = document.getElementById("res")
+    var randonNum = Math.floor(Math.random() * 10 + 1)
+    var score = document.getElementById("score")
+    console.log(randonNum)
+    var totalscore = 10
+    //then create a function to do all the changes.
+    // and then call it in the html buttons
+    function checks() {
+        var currentNum = snum.value
+        if (currentNum == randonNum) {
+            sp.textContent = "Right"
+            alert("yeah")
+            totalscore = totalscore + 1
+            score.textContent = "score:+" + totalscore;
+            console.log("if")
+        }
+        else {
+            console.log("asd")
+            sp.textContent = "wrong"
+            totalscore = totalscore - 1
+            score.textContent = "score:+" + totalscore;
+        }
+    }
+</script>

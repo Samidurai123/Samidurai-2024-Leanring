@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Samidurai
+    </title>
+</head>
+
+<body>
+    <h1 id="head">
+        my new htrml fileaaaaaaa
+    </h1>
+    <h1 id="heads">
+        uuuu
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorum quia, minus aspernatur aut non accusamus
+    </p>
+    <button ondblclick="changes()">
+        buttins
+    </button>
+    <button onclick="all()">
+        newbutton
+    </button>
+
+    <input type="text" placeholder="say something">
+</body>
+
+</html>
+<script>
+    console.log(document.getElementById("head"))
+    var hhh = document.getElementById("head")
+    var ggg = document.getElementById("heads")
+
+    console.log(hhh.textContent)
+    hhh.textContent = "Samidurai"
+
+    function changes() {
+        hhh.textContent = "changed values"
+    }
+    function all() {
+        ggg.textContent = "aaaaaaaaaa"
+    }
+
+</script>
